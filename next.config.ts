@@ -7,4 +7,4 @@ const nextConfig: NextConfig = {
   /* config options here */
 };
 
-export default withPayload(withPayload(withPayload(nextConfig)));
+export default withPayload(nextConfig);
