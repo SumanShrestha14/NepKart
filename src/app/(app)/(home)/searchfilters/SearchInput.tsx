@@ -1,6 +1,5 @@
 import { Input } from "@/components/ui/input"
 import { SearchIcon } from "lucide-react"
-import { Categories } from './../../../../collections/Categories';
 
 
 interface Props{
