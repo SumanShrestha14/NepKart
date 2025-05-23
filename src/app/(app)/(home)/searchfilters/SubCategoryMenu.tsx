@@ -23,7 +23,7 @@ export const SubCategoryMenu = ({
   const backGroundColor = category.color || "#F5F5F5";
   return (
     <div
-      className="fixed z-100 "
+      className="fixed z-[100]"
       style={{
         top: position.top,
         left: position.left,
