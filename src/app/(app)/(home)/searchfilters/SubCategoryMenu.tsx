@@ -1,13 +1,9 @@
 import { Category } from "@/payload-types";
 import Link from "next/link";
-
-// Extended type for transformed category data from layout.tsx
-interface TransformedCategory extends Omit<Category, 'subcategories'> {
-  subCategories?: Category[];
-}
+import { CustomCategory } from "../types";
 
 interface SubCategoryMenuProps {
-  category: TransformedCategory;
+  category: CustomCategory;
   isOpen?: boolean;
   position: { top: number; left: number };
 }
@@ -38,7 +34,7 @@ export const SubCategoryMenu = ({
             {category.subCategories?.map((subCategory: Category) => (
               <Link
                 key={subCategory.slug}
-                href={"/"}
+                href={`/${category.slug}/${subCategory.slug}`}
                 className="w-full text-left p-4 hover:bg-black hover:text-white flex justify-between items-center gap-2"
               >
                 {subCategory.name}
