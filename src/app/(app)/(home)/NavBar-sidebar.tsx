@@ -3,7 +3,6 @@ import {
   Sheet,
   SheetContent,
   SheetHeader,
-  SheetFooter,
   SheetTitle,
 } from '@/components/ui/sheet';
 import React from 'react';
