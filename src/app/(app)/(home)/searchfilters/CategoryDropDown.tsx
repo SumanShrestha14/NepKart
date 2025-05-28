@@ -5,11 +5,11 @@ import { Category } from "@/payload-types";
 import { useRef, useState } from "react";
 import { useDropDownPosition } from "./useDropDownPosition";
 import { SubCategoryMenu } from "./SubCategoryMenu";
-import { CustomCategory } from "../types";
 import Link from "next/link";
+import { categoriesGetManyOutput } from "@/modules/categories/types";
 
 interface Props {
-  category: CustomCategory;
+  category: categoriesGetManyOutput[1];
   isActive?: boolean;
   isNavigationHover?: boolean;
 }
